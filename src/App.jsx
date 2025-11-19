@@ -1,5 +1,6 @@
 import Galaxy from './components/Galaxy';
 import SplitText from './components/SplitText';
+import Magnet from './components/Magnet';
 import './App.css';
 
 function App() {
@@ -16,8 +17,10 @@ function App() {
             zIndex: 10,
             width: '100%',
             display: 'flex',
+            flexDirection: 'column',
             justifyContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
+            gap: '1.5rem'
           }}
         >
           <SplitText
@@ -34,6 +37,11 @@ function App() {
             textAlign="center"
             tag="h1"
           />
+          <div className="cta-wrapper">
+            <Magnet padding={50} disabled={false} magnetStrength={50}>
+              <button className="magnet-button">Start</button>
+            </Magnet>
+          </div>
         </div>
       </div>
     </div>

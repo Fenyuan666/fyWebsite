@@ -43,9 +43,41 @@ h1 {
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
+.cta-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.magnet-button {
+  padding: 0.85rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #010101;
+  background: linear-gradient(120deg, #f0d4ff, #9fd7ff);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 15px 40px rgba(159, 215, 255, 0.45);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.magnet-button:hover {
+  box-shadow: 0 20px 45px rgba(255, 255, 255, 0.25);
+}
+
+.magnet-button:active {
+  transform: scale(0.98);
+}
+
 @media (max-width: 768px) {
   .split-text-title {
     font-size: 2.5rem;
+  }
+
+  .magnet-button {
+    width: 70%;
+    max-width: 260px;
   }
 }
 
