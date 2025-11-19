@@ -16,7 +16,7 @@ body {
 
 .app {
   min-height: 100vh;
-  padding: 2rem;
+  padding: 0;
 }
 
 h1 {
@@ -33,5 +33,19 @@ h1 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   color: #fff;
+}
+
+.split-text-title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .split-text-title {
+    font-size: 2.5rem;
+  }
 }
 
