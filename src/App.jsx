@@ -38,7 +38,7 @@ function App() {
             tag="h1"
           />
           <div className="cta-wrapper">
-            <Magnet padding={50} disabled={false} magnetStrength={50}>
+            <Magnet padding={80} disabled={false} magnetStrength={4}>
               <button className="magnet-button">Start</button>
             </Magnet>
           </div>
